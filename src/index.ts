@@ -1,4 +1,14 @@
-import "./styles.css";
+import './styles.css';
 
-document.getElementById("app").innerHTML = `
-<h1>Hello Vanilla!</h1>`;
+const app = document.getElementById('app');
+
+function init() {
+    if(!app) {
+        console.log("No app present.")
+        return
+    }
+
+    app.innerHTML = `<h1>Hello World!</h1>`
+}
+
+init();
